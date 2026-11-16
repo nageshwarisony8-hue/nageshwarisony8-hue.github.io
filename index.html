@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio | Data Analyst</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1120;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #111c30;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: #38bdf8;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+section {
+  padding: 75px 10%;
+}
+
+.hero {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 45px;
+  color: white;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.hero h2 {
+  color: #94a3b8;
+  margin: 12px 0;
+}
+
+.hero p, .about p {
+  max-width: 700px;
+  color: #cbd5e1;
+}
+
+.btn {
+  display: inline-block;
+  background: #0284c7;
+  color: white;
+  padding: 11px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 20px 10px 0 0;
+}
+
+.btn:hover {
+  background: #0369a1;
+}
+
+.section-title {
+  color: #38bdf8;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.skills, .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #162338;
+  padding: 23px;
+  border-radius: 10px;
+  border: 1px solid #26364d;
+}
+
+.card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.card a {
+  display: inline-block;
+  color: #38bdf8;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.tag {
+  display: inline-block;
+  background: #24364f;
+  color: #7dd3fc;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background: #111c30;
+  padding: 22px;
+  color: #94a3b8;
+}
+
+@media(max-width: 650px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  nav a {
+    margin: 5px;
+    font-size: 12px;
+  }
+  .hero h1 {
+    font-size: 34px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">My Portfolio</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Hello, Welcome to My Portfolio!</h2>
+  <h1>I'm <span>Nageshwari</span></h1>
+  <h2>Aspiring Data Analyst</h2>
+  <p>
+    I am passionate about data analytics, exploring data,
+    discovering meaningful insights, and solving real-world
+    business problems using data-driven approaches.
+  </p>
+  <div>
+    <a class="btn" href="#projects">Explore My Projects</a>
+    <a class="btn" href="https://github.com/nageshwarisony8-hue"
+       target="_blank">Visit GitHub</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    Hello! I'm Nageshwari, an aspiring Data Analyst interested
+    in transforming raw data into meaningful business insights.
+    I have worked on hands-on projects involving data cleaning,
+    data analysis, visualization, and data engineering.
+    I enjoy learning new technologies and continuously
+    improving my analytical skills.
+  </p>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="skills">
+    <div class="card">
+      <h3>Programming</h3>
+      <span class="tag">Python</span>
+      <span class="tag">SQL</span>
+    </div>
+    <div class="card">
+      <h3>Data Visualization</h3>
+      <span class="tag">Power BI</span>
+      <span class="tag">Excel</span>
+    </div>
+    <div class="card">
+      <h3>Data Engineering</h3>
+      <span class="tag">Databricks</span>
+      <span class="tag">PySpark</span>
+      <span class="tag">Unity Catalog</span>
+    </div>
+    <div class="card">
+      <h3>Data Analysis</h3>
+      <span class="tag">EDA</span>
+      <span class="tag">Data Cleaning</span>
+      <span class="tag">Data Transformation</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Ride-Hailing Trip Analytics</h3>
+      <p>
+        Built an end-to-end analytics platform using Databricks
+        and Medallion Architecture with Bronze, Silver and Gold
+        layers, SQL transformations and AI/BI dashboards.
+      </p>
+      <span class="tag">Databricks</span>
+      <span class="tag">SQL</span>
+      <span class="tag">PySpark</span>
+      <a href="https://github.com/nageshwarisony8-hue/ride-hailing-trip-analytics"
+         target="_blank">View Project →</a>
+    </div>
+
+    <div class="card">
+      <h3>Agricultural Crop Yield Analysis</h3>
+      <p>
+        Data analysis project exploring agricultural data
+        and crop yield patterns to discover useful insights.
+      </p>
+      <span class="tag">Python</span>
+      <span class="tag">EDA</span>
+      <a href="https://github.com/nageshwarisony8-hue/Agricultural-Crop-Yield-Analysis"
+         target="_blank">View Project →</a>
+    </div>
+
+    <div class="card">
+      <h3>BikeWale Web Scraping & EDA</h3>
+      <p>
+        Collected and explored motorcycle-related data
+        through web scraping and exploratory data analysis.
+      </p>
+      <span class="tag">Python</span>
+      <span class="tag">Web Scraping</span>
+      <a href="https://github.com/nageshwarisony8-hue/BikeWale-Web-Scraping-EDA"
+         target="_blank">View Project →</a>
+    </div>
+
+    <div class="card">
+      <h3>E-Commerce Sales Analysis</h3>
+      <p>
+        Analyzed e-commerce sales data and presented
+        business insights through an interactive dashboard.
+      </p>
+      <span class="tag">Power BI</span>
+      <span class="tag">Data Analytics</span>
+      <a href="https://github.com/nageshwarisony8-hue/E-Commerce-Sales-Analytics-Power-BI-"
+         target="_blank">View Project →</a>
+    </div>
+
+    <div class="card">
+      <h3>Telco Customer Churn Analysis</h3>
+      <p>
+        Explored customer churn data to understand customer
+        behavior and identify patterns related to churn.
+      </p>
+      <span class="tag">Python</span>
+      <span class="tag">EDA</span>
+      <a href="https://github.com/nageshwarisony8-hue/Telco-Customer-Churn-EDA"
+         target="_blank">View Project →</a>
+    </div>
+
+    <div class="card">
+      <h3>Hotel Booking Analytics</h3>
+      <p>
+        An analytics project focused on hotel booking data,
+        data quality checks and business insights.
+      </p>
+      <span class="tag">SQL</span>
+      <span class="tag">Analytics</span>
+      <a href="https://github.com/nageshwarisony8-hue"
+         target="_blank">Visit GitHub →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <p>Let's connect and explore opportunities to work together!</p>
+  <p>GitHub:
+    <a href="https://github.com/nageshwarisony8-hue" target="_blank">
+      My GitHub Profile
+    </a>
+  </p>
+  <p>LinkedIn:
+    <a href="#" target="_blank">Add LinkedIn Profile Link</a>
+  </p>
+  <p>Email: Add your professional email address</p>
+</section>
+
+<footer>
+  <p>© 2026 Nageshwari | Data Analytics Portfolio</p>
+</footer>
+
+</body>
+</html>
